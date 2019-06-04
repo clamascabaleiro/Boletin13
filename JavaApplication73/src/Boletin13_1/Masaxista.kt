@@ -4,11 +4,7 @@ package Boletin13_1
  *
  * @author clamascabaleiro
  */
-class Masaxista : Seleccion {
-    var titulacion: String? = ""
-    var anosExperiencia: Int = 0
-
-    constructor() {}
+class Masaxista(var titulacion: String = "", var anosExperiencia: Int = 0) : Seleccion {
 
     constructor(id: Int, nome: String, apelido: String, idade: Int, titulacion: String, anosExperiencia: Int) {
         super.setId(id)

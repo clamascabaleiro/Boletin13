@@ -4,10 +4,7 @@ package Boletin13_1
  *
  * @author clamascabaleiro
  */
-class Adestrador : Seleccion {
-    var idFederacion: String? = ""
-
-    constructor() {}
+class Adestrador(var idFederacion: String = "") : Seleccion {
 
     constructor(id: Int, nome: String, apelido: String, idade: Int, idFederacion: String) {
         super.setId(id)

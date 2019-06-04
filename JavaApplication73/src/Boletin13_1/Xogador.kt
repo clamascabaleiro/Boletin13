@@ -4,11 +4,7 @@ package Boletin13_1
  *
  * @author clamascabaleiro
  */
-class Xogador : Seleccion {
-    var dorsal: Int = 0
-    var demarcacion: String? = ""
-
-    constructor() {}
+class Xogador(var dorsal :  Int = 0, var demarcacion : String = "") : Seleccion {
 
     constructor(id: Int, nome: String, apelido: String, idade: Int, dorsal: Int, demarcacion: String) {
         super.setId(id)
