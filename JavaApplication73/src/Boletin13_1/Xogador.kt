@@ -4,15 +4,11 @@ package Boletin13_1
  *
  * @author clamascabaleiro
  */
-class Xogador(var dorsal :  Int = 0, var demarcacion : String = "") : Seleccion {
+//Constructor primario y constructor de la superclase Seleccion
+class Xogador(var dorsal: Int , var demarcacion: String ,id: Int, nome: String, apelido: String, edade: Int) : Seleccion(id, nome, apelido, edade) {
 
-    constructor(id: Int, nome: String, apelido: String, idade: Int, dorsal: Int, demarcacion: String) {
-        super.setId(id)
-        super.setNome(nome)
-        super.setApelido(apelido)
-        super.setIdade(idade)
-        this.dorsal = dorsal
-        this.demarcacion = demarcacion
+    init{
+
     }
 
     @Override

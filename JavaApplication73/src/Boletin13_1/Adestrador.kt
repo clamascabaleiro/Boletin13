@@ -4,15 +4,9 @@ package Boletin13_1
  *
  * @author clamascabaleiro
  */
-class Adestrador(var idFederacion: String = "") : Seleccion {
+//Constructor primario y constructor de la superclase Seleccion
+class Adestrador(var idFederacion: Int, id: Int, nome: String, apelido: String, edade: Int) : Seleccion (id, nome, apelido, edade) {
 
-    constructor(id: Int, nome: String, apelido: String, idade: Int, idFederacion: String) {
-        super.setId(id)
-        super.setNome(nome)
-        super.setApelido(apelido)
-        super.setIdade(idade)
-        this.idFederacion = idFederacion
-    }
 
     @Override
     fun viaxar() {
@@ -32,5 +26,5 @@ class Adestrador(var idFederacion: String = "") : Seleccion {
         return super.toString() + ", Adestrador{" + "idFederacion=" + idFederacion + '}'.toString()
     }
 
-
 }
+

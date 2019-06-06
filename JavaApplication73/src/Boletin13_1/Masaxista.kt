@@ -4,16 +4,10 @@ package Boletin13_1
  *
  * @author clamascabaleiro
  */
-class Masaxista(var titulacion: String = "", var anosExperiencia: Int = 0) : Seleccion {
 
-    constructor(id: Int, nome: String, apelido: String, idade: Int, titulacion: String, anosExperiencia: Int) {
-        super.setId(id)
-        super.setNome(nome)
-        super.setApelido(apelido)
-        super.setIdade(idade)
-        this.titulacion = titulacion
-        this.anosExperiencia = anosExperiencia
-    }
+//Constructor primario y constructor de la superclase Seleccion
+class Masaxista(var titulacion: String, var anosExperiencia: Int, id: Int, nome: String, apelido: String, edade: Int) : Seleccion (id, nome, apelido, edade){
+
 
     @Override
     fun viaxar() {
